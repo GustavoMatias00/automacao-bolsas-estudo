@@ -86,7 +86,7 @@ def main():
         nome_arquivo = f"noticias_bolsas_{data_hoje}.csv"
         
         # Salva o arquivo CSV no seu computador (sem o índice na lateral)
-        df.to_csv(nome_arquivo, index=False, encoding='utf-8-sig')
+        df.to_csv(nome_arquivo, index=False, encoding='utf-8-sig', sep=';')
         
         print(f"\nSucesso! As notícias foram salvas na planilha: {nome_arquivo}")
         print("Você pode abrir este arquivo no Excel ou no Google Sheets para organizar suas opções.")
